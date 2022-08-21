@@ -6,7 +6,7 @@ const loader = document.querySelector(".loader");
 
 const getQuote = async () => {
   loader.classList.remove("hide");
-  const res = await fetch(`https://dwikipotter.eu.org/serverapi/api/quotes`);
+  const res = await fetch(`https://dwikipotter.eu.org/serverapi/api/example/users`);
   const quotes = await res.json();
   loader.classList.add("hide");
   const num = Math.floor(Math.random() * quotes.length);
