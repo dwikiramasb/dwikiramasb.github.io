@@ -4,6 +4,8 @@ const button = document.querySelector(".twitter-share-button");
 const nextBtn = document.querySelector(".next");
 const loader = document.querySelector(".loader");
 
+
+
 const getQuote = async () => {
   loader.classList.remove("hide");
   const res = await fetch(`https://dwikipotter.eu.org/serverapi/api/quotes`);
